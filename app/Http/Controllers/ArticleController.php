@@ -54,7 +54,7 @@ class ArticleController extends Controller
         ///
         ///
 
-        foreach (['ar'] as $locale) {
+        foreach (['fr','ar'] as $locale) {
             $source = 'en';
             $target = $locale;
             $trans = new GoogleTranslate();
@@ -75,6 +75,11 @@ class ArticleController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Article $article)
+    {
+        return response()->json($article);
+
+    }
+    public function showw(Article $article)
     {
         return response()->json($article);
 

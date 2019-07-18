@@ -21,6 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::post('articles', 'ArticleController@store');
 Route::get('articles', 'ArticleController@index');
 Route::get('article/{article}', 'ArticleController@show');
+Route::get('article/{article}', 'ArticleController@showw');
 Route::get('article/{article}/{locale}', 'ArticleController@locale');
 
 
