@@ -54,7 +54,7 @@ class ArticleController extends Controller
         ///
         ///
 
-        foreach (['en','nl', 'fr', 'de','tr'] as $locale) {
+        foreach (['en','nl', 'fr', 'de','tr','nl','ar'] as $locale) {
             $source = 'en';
             $target = $locale;
             $trans = new GoogleTranslate();
