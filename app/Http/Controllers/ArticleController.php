@@ -79,7 +79,7 @@ class ArticleController extends Controller
         return response()->json($article);
 
     }
-    public function showw(Article $article)
+    public function showww(Article $article)
     {
         return response()->json($article);
 
